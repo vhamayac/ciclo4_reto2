@@ -35,7 +35,7 @@ public class UserRepository {
 
     public boolean emailExists(String email){
         Optional <User> user = userCrudRepository.findByEmail(email);
-        return user.isEmpty();
+        return !user.isEmpty();
     }
     public Optional<User> authenticateUser(String email, String password){
         return userCrudRepository.findByEmailAndPassword(email, password);

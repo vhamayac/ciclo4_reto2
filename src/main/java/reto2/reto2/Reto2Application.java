@@ -11,15 +11,15 @@ import java.util.List;
 import java.util.Optional;
 
 @SpringBootApplication
-public class Reto2Application /**implements CommandLineRunner*/ {
-/**	@Autowired
+public class Reto2Application implements CommandLineRunner {
+	@Autowired
 	private UserCrudRepository userRepo;
-*/
+
 	public static void main(String[] args) {
 
 		SpringApplication.run(Reto2Application.class, args);
 	}
-/**
+
 	@Override
 	public void run(String... args) throws Exception {
 		userRepo.deleteAll();
@@ -42,5 +42,5 @@ public class Reto2Application /**implements CommandLineRunner*/ {
 		}
 
 	}
-	*/
+
 }
